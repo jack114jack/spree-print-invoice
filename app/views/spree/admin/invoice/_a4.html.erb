@@ -18,20 +18,20 @@
       <div class="line_items">
         <%= render "line_items_#{params[:template]}" %>
       </div>
-      <div class="thanks">
-        <%= render "thanks" %>
+      <!-- <div class="thanks">
+        <%#= render "thanks" %>
       </div>
       <div class="spacer"> &nbsp;
-      </div>
+      </div> -->
       <div class="totals">
         <%= render "totals_#{params[:template]}" %>
       </div>
       <% if params[:template] != "packaging_slip" %>
-        <div class="states">
-          <%= render "state" %>
+        <!-- <div class="states">
+          <%#= render "state" %>
         </div>
         <div class="spacer"> &nbsp;
-        </div>
+        </div> -->
         <% if @order.reimbursements.reimbursed.any? %>
           <div class="refund">
             <%= render "refund" %>
@@ -39,9 +39,9 @@
         <% end %>
       <% end %>
     </div>
-    <div class="footer">
-      <%= render "footer" %>
-    </div>
+    <!-- <div class="footer">
+      <%#= render "footer" %>
+    </div> -->
   </div>
 </body>
 </html>
