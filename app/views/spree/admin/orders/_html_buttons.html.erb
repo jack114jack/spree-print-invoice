@@ -4,7 +4,7 @@
   <li>
     <%= link_to("/store/admin/invoice/#{@order.number}/#{button}", target:  "_blank") do %>
       <span class='glyphicon glyphicon-print'></span>
-      <%= "Pring #{button.try(:titleize)}" %>
+      <%= "Print #{button.try(:titleize)}" %>
     <% end %>
   </li>
 <%end%>
